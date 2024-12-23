@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: fantasy, Helvetica, sans-serif;
     
+}
+
+body {
+    
     /*Google fonts*/
     
     /*.karla-<uniquifier> {
@@ -13,26 +17,203 @@
     font-style: normal;
     }*/
     
-    /*.rubik {
+    .rubik {
     font-family: "Rubik", serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    }*/
+    }
 }
 
+/*Este headar no lo podia acomodar, pase a usar uno creado con chat gpt, pero dejo el original por las dudas
 header {
     background-color: #0c3d43;
     
+    
 }
 
-header hgroup {
 
+nav {
+    position: absolute;
+    width: 100%;
+    
+        
+    background-color: rgba(4, 30, 34, 0.8);
+    z-index: 3;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+    margin-right: 30px;
+}*/
+
+/* Header general styling Creado con chat gpt*/
+header {
+    background-color: rgb(12, 61, 67);
+    padding: 20px 0;
+    color: white;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-left: 10px;
+}
+
+.header-titles {
+    flex-grow: 1;
     text-align: center;
-    
-    
 }
+
+.navbar {
+    width: 100%;
+    background-color: rgba(4, 30, 34, 0.8);
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item .nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
 
 main {
-    background-color: blueviolet;
+    background-image: url(../media/images/Inicio-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+    text-align: center;
+    color: rgb(103, 154, 204);
+    background-color: rgb(61, 238, 179);
+
+    
 }
+
+#servicios {
+    padding: 320px 20px 20px;
+
+}
+
+
+.service-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background: rgba(27, 90, 141, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: right;
+    
+}
+
+div ul li {
+    
+    list-style: none;
+}
+
+.service-item img {
+    max-width: 400px;
+    border-radius: 15px;
+    
+}
+
+.service-details {
+    
+    align-content: right;
+    flex: 1;
+}
+
+/* Esto es para invertir el orden de los elementos, poniendo la imagen a la derecha */
+.service-item-reverse {
+    text-align: left;
+    flex-direction: row-reverse; /* Invierte el orden de los elementos */
+}
+
+.content {
+    background-color: rgba(29, 90, 141,0.5);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    margin-top: 150px;
+    
+    width: 100%;
+    max-width: 600px;
+    align-content: right ;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario label {
+    text-align: left;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.formulario button {
+    background-color: rgba(12, 61, 67, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario button:hover {
+    background-color: rgba(29, 90, 141, 0.5);
+    color: black;
+}
+
+
+footer { 
+    background-color: rgb(12, 61, 67);
+    text-align: center;
+    color: #fff;
+    
+}
+
