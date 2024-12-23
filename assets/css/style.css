@@ -114,7 +114,6 @@ main {
     color: rgb(103, 154, 204);
     background-color: rgb(61, 238, 179);
 
-    
 }
 
 #servicios {
@@ -140,6 +139,17 @@ main {
 div ul li {
     
     list-style: none;
+}
+
+div ul li a {
+    text-decoration: none;
+
+}
+div ul li a:hover {
+    background-color: rgb(12, 61, 67);
+    padding: 5px;
+    border-radius: 5px;
+    color: #e9dddd;
 }
 
 .service-item img {
@@ -209,11 +219,43 @@ div ul li {
     color: black;
 }
 
+/* Personalización para una tabla más atractiva */
+.table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: rgba(12, 61, 67,0.8);
+    color: white;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #d6eaf8;
+}
+
+td img{
+width: 40px;
+}
+
 
 footer { 
     background-color: rgb(12, 61, 67);
     text-align: center;
     color: #fff;
-    
+
 }
 
