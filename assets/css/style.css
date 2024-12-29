@@ -101,6 +101,19 @@ header {
     border-radius: 5px;
 }
 
+/*Estilo del boton hamburguesa, hay que trabajarlo mas*/
+
+.navbar-toggler {
+    border: solid white;
+}
+/*
+.navbar-toggler-icon {
+    background-color: #000; 
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+}
+*/
 
 main {
     background-image: url(../media/images/Inicio-background.jpg);
@@ -113,8 +126,23 @@ main {
     text-align: center;
     color: rgb(103, 154, 204);
     background-color: rgb(61, 238, 179);
-
+    
 }
+h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.inicio-content {
+    text-align: center;    
+}
+
+.inicio-texto {
+    max-width: 60%; 
+    margin: 0 auto;
+    text-align: justify;
+}
+
 
 #servicios {
     padding: 320px 20px 20px;
@@ -127,10 +155,10 @@ main {
     flex-direction: row;
     gap: 20px;
     align-items: center;
-    background: rgba(27, 90, 141, 0.5);
+    /*background: rgba(27, 90, 141, 0.5);*/
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
     margin-bottom: 20px;
     text-align: right;
     
@@ -186,10 +214,31 @@ div ul li a:hover {
     align-content: right ;
 }
 
+/*Reseña*/
+/* Sección Reseñas (Grid) */
+#reseña .review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.review-grid div {
+    background: rgba(12, 61, 67, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);    
+}
+.review-grid div h3 {
+    color: white;
+}
+
+
 .formulario {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
 
 .formulario label {
@@ -226,6 +275,7 @@ div ul li a:hover {
     width: 100%;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
+    
 }
 
 .table th, .table td {
@@ -235,8 +285,9 @@ div ul li a:hover {
 }
 
 .table th {
-    background-color: rgba(12, 61, 67,0.8);
+    background-color: rgba(12, 61, 67, 0.5);
     color: white;
+    
 }
 
 .table tbody tr:nth-child(even) {
@@ -256,6 +307,9 @@ footer {
     background-color: rgb(12, 61, 67);
     text-align: center;
     color: #fff;
+    
+    margin-bottom: -20px;
+    padding: 30px;
 
 }
 

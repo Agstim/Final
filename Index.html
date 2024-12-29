@@ -49,6 +49,7 @@
                     <h2>Servicio técnico informático y móvil</h2>
                 </div>
             </div>
+            <!-- Nav original,
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid justify-content-end">
                     <ul class="navbar-nav">
@@ -56,15 +57,37 @@
                         <li class="nav-item"><a href="#servicios" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
                         <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>
                         <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                        <li class="nav-item"><a href="#reseña" class="nav-link">Reseña</a></li>
                         <li class="nav-item"><a href="./pages/carrito.html" class="nav-link"><i class="fas fa-shopping-cart"> </i> Carrito</a></li>
                     </ul>
+                </div>
+            </nav>
+            -->
+            <!--Le hace falta mas trabajo pero quedara para luego-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- Botón hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menú -->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                            <li class="nav-item"><a href="#servicios" class="nav-link"><i class="fa-solid fa-screwdriver-wrench"></i> Servicios</a></li>
+                            <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>
+                            <li class="nav-item"><a href="#reseña" class="nav-link">Reseña</a></li>
+                            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                            <li class="nav-item"><a href="./pages/carrito.html" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     
     <main>
-        <section >
+        <!--<section >
             <div class="inicio-content">
                 <h2>Bienvenido a Nuestro Taller</h2>
                 <p>
@@ -73,10 +96,36 @@
                     de tus dispositivos. Contamos con técnicos altamente capacitados y un ambiente 
                     equipado con tecnología de punta.
                 </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non debitis id voluptates vitae odio fuga, laboriosam laudantium saepe! Inventore non nostrum quisquam, numquam esse veritatis repellat libero facere sequi omnis, id itaque neque tempore.</p>
+
+            </div>
+        </section>-->
+
+        <section class="inicio">
+            <div class="inicio-content">
+                <h2>Bienvenido a Nuestro Taller</h2>
+                <div class="inicio-texto">
+                    <p>
+                        En "Tu Empresa" somos especialistas en la reparación y mantenimiento de equipos informáticos y móviles. 
+                        Ofrecemos servicios personalizados para garantizar el mejor rendimiento de tus dispositivos, ya sea 
+                        una computadora de escritorio, una laptop o un dispositivo móvil.
+                    </p>
+                    <p>
+                        Nuestro equipo técnico está altamente capacitado para brindarte soluciones rápidas y efectivas. 
+                        Contamos con herramientas de última generación para asegurarnos de que recibas un servicio de calidad. 
+                        ¡Confía en nosotros para cuidar de tus dispositivos!
+                    </p>
+                    <p>
+                        También atendemos a oficinas y pequeñas empresas que no cuentan con un área de soporte IT propia. 
+                        Ofrecemos sistemas de abonos mensuales, con horas de servicio contratadas que incluyen al menos una visita in situ al mes. 
+                        Nuestra meta es proporcionar un soporte técnico eficiente y adaptado a las necesidades de cada cliente.
+                    </p>
+                </div>
             </div>
         </section>
+
         <section id="servicios">
-            <h2>Nuestros Servicios</h2><br/>
+            <h2><a href="index.html">Nuestros Servicios</a></h2><br/>
             <div class="service-item">
                 <img src="./assets/media/images/PC.webp" alt="Reparación de PC">
                 <div class="service-details">
@@ -91,7 +140,7 @@
                         <li>Remoción de malware</li>
                         <li>Reparación de monitores</li>
                         <li>Reparación de fuentes de alimentación</li>
-                        <li>Para otro tipo de fallas <a href="#contacto">Consultar</a></li>
+                        <li>Cualquier otro tipo de fallas y/o ascesoria o consulta <a href="#contacto">Aqui</a></li>
                     </ul>
                 </div>
             </div>
@@ -111,7 +160,7 @@
                         <li>Cambio pantalla</li>
                         <li>Cambio pin de carga</li>
                         <li>Reparación de cargadores</li>
-                        <li>Para otro tipo de fallas <a href="#contacto">Consultar</a></li>
+                        <li>Cualquier otro tipo de fallas y/o ascesoria o consulta <a href="#contacto">Aqui</a></li>
                     </ul>
                 </div>
             </div>
@@ -127,13 +176,13 @@
                         <li>Cambio pantalla & tactil</li>
                         <li>Cambio bateria</li>
                         <li>Cambio pin de carga/placa de carga</li>
-                        <li>Para otro tipo de fallas <a href="#contacto">Consultar</a></li>
+                        <li>Cualquier otro tipo de fallas y/o ascesoria o consulta <a href="#contacto">Aqui</a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <section id="productos">
-            <h2>Productos</h2>
+            <h2><a href="index.html">Productos</a></h2>
             <section>     
                 <div class="container my-5">
                     <div id="productos-container" class="row">                          
@@ -147,9 +196,41 @@
                 </div>  
             </section>  
         </section>
+
+        <!-- Sección Reseñas, esta hardcodeada, luego la haremos dimanica -->
+        <section id="reseña">
+            <h2><a href="index.html">Reseñas</a></h2>
+            <div class="review-grid">
+                <div>
+                    <h3>Aleatorio 1</h3>
+                    <p>"¡Increíble servicio! Repararon mi laptop en tiempo récord y ahora funciona como nueva. Definitivamente volveré si tengo algún problema."</p>
+                </div>
+                <div>
+                    <h3>Aleatorio 2</h3>
+                    <p>"Atención personalizada y muy profesional. Me explicaron cada paso de la reparación y los precios fueron más que razonables. ¡Súper recomendados!"</p>
+                </div>
+                <div>
+                    <h3>Aleatorio 3</h3>
+                    <p>"Tenía problemas con mi computadora desde hacía meses, y en este taller lo resolvieron en un día. El equipo es muy amable y eficiente."</p>
+                </div>
+                <div>
+                    <h3>Aleatorio 4</h3>
+                    <p>"Me salvaron con mi PC justo antes de una entrega importante. Excelente servicio y trato muy amable. Sin duda, los mejores en el área."</p>
+                </div>
+                <div>
+                    <h3>Aleatorio 5</h3>
+                    <p>"Repararon mi monitor cuando otros talleres me dijeron que no tenía solución. Quedé muy satisfecho con el resultado. Gracias por la honestidad y la calidad del trabajo."</p>
+                </div>
+                <div>
+                    <h3>Aleatorio 6</h3>
+                    <p>"Además de reparar mi computadora, hicieron una limpieza completa y ahora está más rápida que nunca. Muy buen servicio y precios justos."</p>
+                </div>
+            </div>
+        </section>
+
         <!--section Contacto-->            
             <div id="contacto" class="content">
-                <h2>Contacto</h2>
+                <h2><a href="index.html">Contacto</a></h2>
                 <form action="https://formspree.io/f/mrbgkwdg" method="POST" class="formulario">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required>
@@ -164,9 +245,7 @@
                 </form>
             </div>
         </section>
-        <section id="carrito">            
-            <h2>Carrito</h2>
-        </section>
+        
     </main>    
     <footer>
         <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>

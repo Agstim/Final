@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () =>
 
     //estan variables se utilizan para ver la pagina actual, la cantidad de elementos a mostrar y el total de elementos.
     let currentPage = 1;
-    const limit = 21;
+    const limit = 12;
     let totalProductos = 0;
 
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () =>
     {
       //esta variable se usa para saber los elemtos que ya mostre y los que tienen que mostrar, o sea a partir del 2 en adelante
       const skip = (page - 1) * limit;
-
+    //fetch('https://api.escuelajs.co/api/v1/categories/2/products?limit=${limit}&skip=${skip}')
     fetch(`https://dummyjson.com/products?limit=${limit}&skip=${skip}`)
         .then((response) => response.json())
         .then((data) => {
